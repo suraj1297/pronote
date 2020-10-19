@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+}
+
+body {
+  background-color: #2d6187;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  letter-spacing: 5px;
+}
+
+.editor,
+.note {
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border: none;
+  border-style: none;
+  box-shadow: 0 0 10px 5px #646464;
+}
+
+textarea,
+.note-container,
+textarea:focus {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.note-container {
+  background-color: #646464;
+  height: 460px;
+  box-shadow: 0 0 0.5px 0.5px white;
+  width: 520px;
+  overflow-wrap: break-word;
+}
